@@ -1,10 +1,15 @@
 #include <stdio.h>
-//data type and variable
-int main()
+//data types to print int(%d),float(%6f),char(%c),double(%f)
+
+int main(int argc, char const *argv[])
 {
-    printf("\"A\"\tB\n");
-    printf("c\nd\n");
-    printf("a\b b\n");
-    printf("\? \n \'\n \\");
+    int var = 100;
+    double vard = 100000;
+    char varc = 'a';
+    float varf = 5.56;
+    printf("%d", var);
+    printf("%f", vard);
+    printf("%c", varc);
+    printf("%6f", varf);
     return 0;
 }
