@@ -1,14 +1,13 @@
 #include <stdio.h>
-//placing value in variable
+//floating point interger
 
 int main()
 {
-    int a, b;
-    a = 10;
-    b = 20;
-    printf("%d\n", a);
-    printf("%d\n", b);
-    printf("sum of value:%d", a + b);
+    float f;
+    f = 3.1159;
+    printf("%d\n", f); //decimal
 
+    f = 314159E-5L;
+    printf("%d", f); //expotential
     return 0;
 }
