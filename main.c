@@ -1,13 +1,13 @@
 #include <stdio.h>
-//floating point interger
+//typedef \\
+\*typedef -type-name(char ,int float , double) new-name/*
+
+typedef int integer;
 
 int main()
 {
-    float f;
-    f = 3.1159;
-    printf("%d\n", f); //decimal
-
-    f = 314159E-5L;
-    printf("%d", f); //expotential
-    return 0;
+    int a = 10;
+    integer b = 20;
+    integer c = a + b;
+    printf("total:%d\n", c);
 }
