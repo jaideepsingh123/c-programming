@@ -1,13 +1,24 @@
 #include <stdio.h>
-//typedef \\
-\*typedef -type-name(char ,int float , double) new-name/*
+//enumerated (list of constant integer value,use only { brackets})
 
-typedef int integer;
-
+enum boolean
+{
+    NO,
+    YES
+};
+enum days
+{
+    sun,
+    mon,
+    tue,
+    wed,
+    thu,
+    fri = 7,
+    sat
+};
 int main()
 {
-    int a = 10;
-    integer b = 20;
-    integer c = a + b;
-    printf("total:%d\n", c);
+    enum boolean flag = YES;
+    printf("%d %d %d\n", flag, thu, sat);
+    return 0;
 }
