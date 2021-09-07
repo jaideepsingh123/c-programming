@@ -1,24 +1,12 @@
 #include <stdio.h>
-//enumerated (list of constant integer value,use only { brackets})
+//type casting
 
-enum boolean
-{
-    NO,
-    YES
-};
-enum days
-{
-    sun,
-    mon,
-    tue,
-    wed,
-    thu,
-    fri = 7,
-    sat
-};
 int main()
 {
-    enum boolean flag = YES;
-    printf("%d %d %d\n", flag, thu, sat);
+    int sum = 20, count = 5;
+    double mean;
+    mean = (double)sum / count;
+    printf("value of mean:%f\n", mean);
+
     return 0;
 }
