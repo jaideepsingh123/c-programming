@@ -1,29 +1,23 @@
 #include <stdio.h>
-//arithmetic operators
+//relational opreators (compare couple of value )(==,!=(not equal to),>(greater then),<(less then)>=,<=)
+
 int main()
 
 {
-    int a = 21;
-    int b = 10;
+    int a = 10;
+    int b = 20;
     int c;
-    c = a + b;
-    printf("line 1:%d\n", c);
-    c = a - b;
-    printf("line 2:%d\n", c);
-    c = a * b;
-    printf("line 3:%d\n", c);
-    c = a / b;
-    printf("line 4:%d\n", c);
-    c = a % b;
-    printf("line 5 :%d\n", c);
-    c = a++; /*increasing*/
-    printf("line 6:%d\n", c);
-    c = a--; /*decreasing*/
-    printf("line 7:%d\n", c);
-    c = ++a;
-    printf("line 8:%d\n", c);
-    c = --a;
-    printf("line 9:%d\n", c);
-
+    c = a == b;
+    printf("==:%d\n", c);
+    c = a != b;
+    printf("!=:%d\n", c);
+    c = a >= b;
+    printf(">=:%d\n", c);
+    c = a <= b;
+    printf("<=:%d\n", c);
+    c = a > b;
+    printf(">:%d\n", c);
+    c = a < b;
+    printf("<:%d", c);
     return 0;
 }
