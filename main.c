@@ -1,19 +1,23 @@
 #include <stdio.h>
-//logical operators(a&&B) is false,(a||b)is true !(a && b) is true
+// assignment operators
+
 int main()
-
 {
+    int a = 21;
     int c;
-    c = 2 || 1;
-    printf("1 || 1:%d\n", !c);
-    c = 3 || 0;
-    printf("1 || 0:%d\n", !c);
-
-    c = 4 || 1;
-    printf("0 || 1:%d\n", !c);
-
-    c = 5 || 0;
-    printf("0 || 0:%d\n", !c);
+    c = a;
+    printf("line 1 - =operator, value of c=%d\n", c);
+    c += a;
+    printf("line 2 - += operator,value of c =%d\n", c);
+    c -= a;
+    printf(" line 3 - -=operator , value of c=%d\n", c);
+    c *= a;
+    printf("line 4 - *=operator  value of c =%d\n", c);
+    c /= a;
+    printf("line 5 - /=operator,value of c=%d\n", c);
+    c = 200;
+    c %= a;
+    printf("line 6 - %=operators , value of c =%d\n", c);
 
     return 0;
 }
