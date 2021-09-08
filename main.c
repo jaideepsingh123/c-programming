@@ -1,12 +1,12 @@
 #include <stdio.h>
-//type casting
-
+//type casting(type_name) expression,to convert one data types to another data types
 int main()
+
 {
-    int sum = 20, count = 5;
-    double mean;
-    mean = (double)sum / count;
-    printf("value of mean:%f\n", mean);
+    int sum = 17, count = 5;
+    float meam;
+    meam = (float)sum / count;
+    printf("value of sum:%f\n", meam);
 
     return 0;
 }
