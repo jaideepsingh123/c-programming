@@ -1,23 +1,15 @@
 #include <stdio.h>
-// assignment operators
-
+//operators precedence(determines the grouping of terms in an expression)
 int main()
 {
-    int a = 21;
-    int c;
-    c = a;
-    printf("line 1 - =operator, value of c=%d\n", c);
-    c += a;
-    printf("line 2 - += operator,value of c =%d\n", c);
-    c -= a;
-    printf(" line 3 - -=operator , value of c=%d\n", c);
-    c *= a;
-    printf("line 4 - *=operator  value of c =%d\n", c);
-    c /= a;
-    printf("line 5 - /=operator,value of c=%d\n", c);
-    c = 200;
-    c %= a;
-    printf("line 6 - %=operators , value of c =%d\n", c);
+    int result;
+    result = 5 + 4 / 2;
+    printf("result:%d\n", result);
 
+    result = 5 + 2 - 3;
+    printf("result:%d\n", result);
+
+    result = 5 - 2 + 3;
+    printf("result:%d\n", result);
     return 0;
 }
