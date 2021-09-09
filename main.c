@@ -1,19 +1,27 @@
 #include <stdio.h>
-//if  else statement
+//nested if statement
 int main()
 {
+    int a, b, c;
+    printf("enter three number a,b,c:\n");
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
 
-    int num;
-    printf("enter your name :");
-    scanf("%d", &num);
-
-    if (num % 2 == 0)
+    if (a > b && a > c)
     {
-        printf("number is even");
+        printf("a is big \n");
     }
     else
     {
-        printf("number is odd");
+        if (b > c)
+        {
+            printf("b is big \n");
+        }
+        else
+        {
+            printf("c is big\n");
+        }
     }
 
     return 0;
