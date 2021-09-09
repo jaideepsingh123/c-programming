@@ -1,26 +1,33 @@
 #include <stdio.h>
-//if else .. if else statement
+//switch statement
 int main()
 {
-    int a, b, c;
-    printf("enter your number :\n");
-    scanf("%d", &a);
-    scanf("%d", &b);
-    scanf("%d", &c);
-    if (b > c && b > a)
+    char ch;
+    printf("enter a character:");
+    scanf("%c", &ch);
+
+    switch (ch)
     {
-        printf("b is big \n");
+    case 'a':
+        printf("a is a vowel");
+        break;
+
+    case 'e':
+        printf("e is a vowel");
+        break;
+    case 'i':
+        printf("i is vowel");
+        break;
+    case 'o':
+        printf("o is vowel");
+        break;
+    case 'u':
+        printf("u is vowel");
+        break;
+    default:
+        printf("consonant / special character");
+        break;
     }
-    else
-    {
-        if (c > a && c > b)
-        {
-            printf("c is big");
-        }
-        else
-        {
-            printf("b is big\n");
-        }
-    }
+
     return 0;
 }
