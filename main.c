@@ -1,28 +1,26 @@
 #include <stdio.h>
-//nested if statement
+//if else .. if else statement
 int main()
 {
     int a, b, c;
-    printf("enter three number a,b,c:\n");
+    printf("enter your number :\n");
     scanf("%d", &a);
     scanf("%d", &b);
     scanf("%d", &c);
-
-    if (a > b && a > c)
+    if (b > c && b > a)
     {
-        printf("a is big \n");
+        printf("b is big \n");
     }
     else
     {
-        if (b > c)
+        if (c > a && c > b)
         {
-            printf("b is big \n");
+            printf("c is big");
         }
         else
         {
-            printf("c is big\n");
+            printf("b is big\n");
         }
     }
-
     return 0;
 }
