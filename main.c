@@ -1,12 +1,20 @@
 #include <stdio.h>
-//if statement
+//if  else statement
 int main()
 {
+
     int num;
-    printf("enter your number:");
+    printf("enter your name :");
     scanf("%d", &num);
+
     if (num % 2 == 0)
     {
-        printf("welcome to this beautifull world of operators");
+        printf("number is even");
     }
+    else
+    {
+        printf("number is odd");
+    }
+
+    return 0;
 }
