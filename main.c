@@ -1,15 +1,13 @@
 #include <stdio.h>
+//how to print square roots
+
 int main()
 {
-    int i, end;
-    printf("print all square root from 1 to :");
-    scanf("%d", &end);
-
-    i = 1;
-    while (i <= end)
+    char ch = 'a';
+    while (ch <= 'z')
     {
-        printf("%d\n", i * i * i);
-        i++;
+        printf("%c\n", ch);
+        ch++;
     }
     return 0;
 }
