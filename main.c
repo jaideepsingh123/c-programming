@@ -1,24 +1,31 @@
 #include <stdio.h>
-#include <string.h>
-//strlen(length of string) ,strcmp(comparison of string),strrev(reversed of string),()
+
+// pointers are variable whose value is the address of another variable
 int main()
 {
-    char arr1[10];
-    char arr2[10];
-    char arr[20];
-    int len = 0, Cmp = 0;
-    strcpy(arr1, "hello");
-    strcpy(arr2, "world");
-    printf("arr1 : %s\n", arr1);
-    printf("arr2 : %s\n", arr2);
+    int i = 10;
+    double d = 10.123456;
+    char c = 'a';
 
-    len = strlen(arr1);
-    printf(" length of arr1 :%d\n", len);
-    Cmp = strcmp(arr1, arr2);
-    printf("comparison:%d\n", Cmp);
-    strrev(arr1);
-    printf("reversed :%s\n", arr1);
-    strcat(arr1, arr2);
-    printf("cancot:%s\n", arr1);
+    int *ip = &i; /* addressing the pointers*/
+    double *dp = &d;
+    char *cp = &c;
+    printf("value of i:%d\n\n", i);
+    printf("value of d:%f\n\n", d);
+    printf("value of c:%c\n\n", c);
+
+    printf("address of i:%x\n\n", ip); /*also use %p*/
+    printf("address of d:%x\n\n", dp);
+    printf("address of c:%x\n\n\n\n", cp);
+    printf("size of i:%d\n\n", sizeof(i));
+    printf("size of d:%d\n\n", sizeof(d));
+    printf("size of c:%d\n\n", sizeof(c));
+    printf("size of ip:%d\n\n", sizeof(ip));
+    printf("size of dp:%d\n\n", sizeof(dp));
+    printf("size of cp:%d\n\n", sizeof(cp));
+    printf("value stored at %x is %d\n\n", ip, *ip);
+    printf("value stored %x is %d\n\n", dp, *dp);
+    printf("value stored %x is %d\n\n", cp, *cp);
+
     return 0;
 }
