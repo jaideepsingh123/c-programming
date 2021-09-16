@@ -1,21 +1,24 @@
 #include <stdio.h>
-
-//string is actually is one dimensional array of character terminated by null charactor ("\0") %S for calling strings
+#include <string.h>
+//strlen(length of string) ,strcmp(comparison of string),strrev(reversed of string),()
 int main()
 {
-    char greeting[10] = {'h', 'e', 'l', 'l', 'o', '\0'};
-    printf("%c\n", greeting[2]);
-    printf("%s\n", greeting);
-    printf("\nenter a greeting message 1:");
-    scanf("%[^\n]s", greeting);
+    char arr1[10];
+    char arr2[10];
+    char arr[20];
+    int len = 0, Cmp = 0;
+    strcpy(arr1, "hello");
+    strcpy(arr2, "world");
+    printf("arr1 : %s\n", arr1);
+    printf("arr2 : %s\n", arr2);
 
-    printf("\ngreeting message :%s", greeting);
-
-    fflush(stdin);
-
-    printf("\n enter a greeting message 2:");
-    scanf("%[^\n]s", greeting);
-
-    printf("\ngreeting message :%s", greeting);
+    len = strlen(arr1);
+    printf(" length of arr1 :%d\n", len);
+    Cmp = strcmp(arr1, arr2);
+    printf("comparison:%d\n", Cmp);
+    strrev(arr1);
+    printf("reversed :%s\n", arr1);
+    strcat(arr1, arr2);
+    printf("cancot:%s\n", arr1);
     return 0;
 }
