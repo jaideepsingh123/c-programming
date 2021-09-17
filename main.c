@@ -1,20 +1,14 @@
 #include <stdio.h>
-//null pointers
+//pointer  to pointer is a form f multiple indirection or a chain of pointers
 int main()
 {
-    int *ptr = NULL;
-    int i = 0; /*addrssing values*/
-    ptr = &i;
-    printf("The value of ptr is :%x\n", ptr);
-    if (ptr)
-    {
-        printf("pointer is not a null pointer \n");
-    }
-
-    if (!ptr)
-    {
-        printf("pointer is a null  pointer\n");
-    }
-
-    return 0;
+    int i = 10;
+    int *ip = &i;
+    int **iip = &ip;
+    printf("Address of i:%x\n\n\n\n", &i);
+    printf("value of ip:%x\n\n", ip);
+    printf("value at address of iip:%X\n\n\n\n", *iip);
+    printf("value of i:%d\n\n", i);
+    printf("value of i:%d\n\n", *ip);
+    printf("value of i:%d\n\n\n", **iip);
 }
