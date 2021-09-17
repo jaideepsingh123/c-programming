@@ -1,10 +1,10 @@
 #include <stdio.h>
-//storage classes defines the scope (visibility) and life time of variable
-
-/*auto(suppose a local variable to convert it storage classes)*/
-
-/*examples of auto classes*/
+//register storage class
+int main()
 {
-    int mount auto int month;
+    register int a = 100;
+    printf("value of a:%d\n\n", a);
+
+    printf("address of a:%d\n\n", &a); /*this will not give any value because register var do not have address*/
+    return 0;
 }
-/*auto storage class is the default storage class for all local variable*/
