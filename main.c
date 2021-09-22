@@ -1,22 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-//file i/o// is collection of charactors stored on a permanent storage device it
-/*standard file automatically opend when program is executes to provide acces to the keyboard (stdin)input,(stdout)(stdrerr)*/
+
+//writing a file
+/*finput{}writes the string to output stream referenced by fp*/
 int main()
 {
-    //int c;
-    //  printf("Enter a char:");
-    //c = getchar();
-    //printf("\nyou entered:");
-    //putchar(c);
-    //char str[100];
-    //printf("\nenter a line:");
-    //gets(str);
-    //printf("\nyou entered:");
-    //puts(str);
-    FILE *fp;
-    fp = fopen("test.txt", "w+");
+    FILE *fp;                     /*file pointer where to save file*/
+    fp = fopen("test.txt", "w+"); /*file open by fopen*/
+    fputc('*', fp);
+    /* *-single charactor , fp file pointer where to save file data*/
+    fprintf(fp, "\nthis is testing for fprintf....\n");
+    fputs("this is testing for fputs...\n", fp);
     fclose(fp);
+
     return 0;
 }
