@@ -1,16 +1,24 @@
 #include <stdio.h>
-
-//writing a file
-/*finput{}writes the string to output stream referenced by fp*/
+//reading a file
+/*fgetc()function reads a charactor from the input referenced by fp*/
 int main()
 {
-    FILE *fp;                     /*file pointer where to save file*/
-    fp = fopen("test.txt", "w+"); /*file open by fopen*/
-    fputc('*', fp);
-    /* *-single charactor , fp file pointer where to save file data*/
-    fprintf(fp, "\nthis is testing for fprintf....\n");
-    fputs("this is testing for fputs...\n", fp);
-    fclose(fp);
+    FILE *fp;
+    char buff[100], ch; /*charactor arrays*/
 
+    fp = fopen("test.txt", "r");
+
+    ch = fgetc(fp);
+    /*read charactor*/
+    printf("1:%c\n\n", ch);
+
+    fscanf(fp, "%s", buff); /*read first  word/letter before the space*/
+    printf("2:%s\n\n", buff);
+
+    fgets(buff, 255, fp); /*read the remaing part before space
+    printf("3:%s\n", buff);
+
+    fgets(buff, 255, fp);/*read next line*/
+    printf("4 :%s\n", buff);
     return 0;
 }
