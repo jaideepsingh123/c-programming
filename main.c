@@ -1,25 +1,15 @@
-#include "stdio.h"
-#define BEGIN {
-#define END }
-#define Interger int
-//macro is text substitution definition which meam whenever a macro is callled text it get expaned at line of call preprocessor
-
-Interger main()
-    BEGIN
-    Interger i = 1;
-while (i <= 10)
-    BEGIN
-printf("i=%d\n", i);
-i++;
-END
-    END
-    /*without any preprocessor
-    int main
-    {(begin)
-    int i=1;
-while (i<=10);
+#include <stdio.h>
+//function is a group of statement that together perform a task it also know as method and sub-routine or procedure main is function (function_name),return types(int,float,double,) what value we wnat to return _types fuction_name(data_typeparameters1(int num) ,data parameter2,....)
+void sum(int x, int y);
+int main()
 {
-    print("i=%d\n",i);
-    i++
+    int a = 15, b = 50;
+    sum(10, 30);
+    sum(a, b);
+    return 0;
 }
-}*/
+void sum(int x, int y)
+{
+    int total = x + y;
+    printf("total :%d\n", total);
+}
